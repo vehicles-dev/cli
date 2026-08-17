@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to `vehicles-dev-cli` are documented here. This project adheres to
+All notable changes to `@vehicles-dev/cli` are documented here. This project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## 0.1.0

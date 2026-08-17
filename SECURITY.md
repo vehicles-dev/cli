@@ -2,7 +2,7 @@
 
 ## Supported versions
 
-Security fixes are released for the latest published version of `vehicles-dev-cli`.
+Security fixes are released for the latest published version of `@vehicles-dev/cli`.
 
 ## Reporting a vulnerability
 
