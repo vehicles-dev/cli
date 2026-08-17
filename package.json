@@ -1,0 +1,53 @@
+{
+  "name": "@vehicles-dev/cli",
+  "version": "0.1.0",
+  "description": "Official command-line interface for the vehicles.dev API.",
+  "keywords": [
+    "vehicles",
+    "vin",
+    "automotive",
+    "vehicle-data",
+    "cli"
+  ],
+  "homepage": "https://vehicles.dev/docs",
+  "bugs": {
+    "url": "https://github.com/vehicles-dev/cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vehicles-dev/cli.git"
+  },
+  "license": "MIT",
+  "author": "Vehicles.dev",
+  "type": "module",
+  "bin": {
+    "vehicles": "./dist/main.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.32.1",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "pnpm format:check && pnpm typecheck && pnpm build && pnpm test",
+    "smoke": "node dist/main.js --version && node dist/main.js --help >/dev/null",
+    "prepublishOnly": "pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.3",
+    "prettier": "3.9.6",
+    "typescript": "5.9.3",
+    "vitest": "4.1.10"
+  }
+}
