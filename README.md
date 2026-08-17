@@ -1,4 +1,4 @@
-# @vehicles-dev/cli
+# vehicles-dev-cli
 
 Official command-line interface for the [vehicles.dev](https://vehicles.dev) API. Log in once, then
 decode VINs from your terminal — and the [vehicles.dev MCP server](https://vehicles.dev/mcp) picks up
@@ -7,8 +7,8 @@ the same login automatically, so you never have to export an API key.
 ## Install
 
 ```bash
-npm install -g @vehicles-dev/cli
-# or: pnpm add -g @vehicles-dev/cli
+npm install -g vehicles-dev-cli
+# or: pnpm add -g vehicles-dev-cli
 ```
 
 Requires Node.js 22 or newer.
